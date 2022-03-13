@@ -324,6 +324,12 @@ class CombatCore(CoreBase):
                         or kca_u.kca.exists(
                             'kc', 'combat|combat_retreat.png')):
                     Log.log_debug("Check for Port API.")
+                    for ship_idx, ship in enumerate(flt.fleets.combat_ships):
+                        Log.log_debug(str(ship.name) + ": " + str(ship.damage.display_name) + " damage")
+                        if ship.damage is DamageStateEnum.HEAVY:
+                            Log.log_debug("Flagship heavily damaged.")
+                            self._click_until_port()
+                        break
                     api_result = api.api.update_from_api(
                         {KCSAPIEnum.PORT}, need_all=False, timeout=3)
                     if KCSAPIEnum.PORT.name in api_result:
