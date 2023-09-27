@@ -216,7 +216,7 @@ class NavNode(object):
             if api_update:
                 api.api.update_from_api({c['api_target']})
             kca_u.kca.hover('top')
-            kca_u.kca.sleep()
+            kca_u.kca.sleep() #() is source;
             kca_u.kca.wait(
                 kca_u.kca.r[c['wait_target_region']], c['wait_target'], 20,
                 NEAR_EXACT)

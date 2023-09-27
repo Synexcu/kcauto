@@ -1,5 +1,5 @@
 {
-  "general.jst_offset": 0,
+  "general.jst_offset": -2,
   "general.interaction_mode": "direct_control",
   "general.chrome_dev_port": 9222,
   "general.paused": false,
@@ -11,53 +11,62 @@
     21
   ],
   "expedition.fleet_4": [
-    38
+    37
   ],
-  "pvp.enabled": true,
-  "pvp.fleet_preset": null,
+  "pvp.enabled": false,
+  "pvp.fleet_preset": 3,
   "combat.enabled": false,
-  "combat.sortie_map": "1-1",
+  "combat.sortie_map": "7-5",
   "combat.fleet_mode": "standard",
   "combat.fleet_presets": [],
-  "combat.node_selects": [],
+  "combat.node_selects": [
+    "F>J",
+    "O>P"
+  ],
   "combat.retreat_points": [],
   "combat.push_nodes": [],
   "combat.node_formations": [
-    "1:diamond",
-    "B:double_line",
-    "C:double_line"
+    "A:diamond",
+    "B:line_abreast",
+    "D:vanguard",
+    "J:vanguard",
+    "T:line_ahead"
   ],
   "combat.node_night_battles": [
-    "1:True"
+    "T:True"
   ],
   "combat.retreat_limit": 4,
-  "combat.repair_limit": 3,
-  "combat.repair_timelimit_hours": 1,
+  "combat.repair_limit": 4,
+  "combat.repair_timelimit_hours": 0,
   "combat.repair_timelimit_minutes": 0,
   "combat.lbas_groups": [],
   "combat.lbas_group_1_nodes": [],
   "combat.lbas_group_2_nodes": [],
   "combat.lbas_group_3_nodes": [],
-  "combat.check_fatigue": false,
+  "combat.check_fatigue": true,
   "combat.check_lbas_fatigue": false,
   "combat.reserve_repair_dock": false,
-  "combat.port_check": false,
-  "combat.clear_stop": false,
+  "combat.port_check": true,
+  "combat.clear_stop": true,
   "event_reset.enabled": false,
   "event_reset.frequency": 3,
   "event_reset.reset_difficulty": 3,
   "event_reset.farm_difficulty": 2,
   "ship_switcher.enabled": false,
-  "ship_switcher.slots": {},
-  "passive_repair.enabled": false,
-  "passive_repair.repair_threshold": 1,
+  "ship_switcher.slots": {
+    "1": "damage:>=:3|ship:396:::::::locked:not_ringed",
+    "2": "damage:==:4,morale:<:50|class:2:<:2:!=:4:::unlocked:not_ringed",
+    "3": "morale:<:50,damage:==:4|class:2:<:2:!=:4:::unlocked:not_ringed",
+    "6": "damage:==:4|ship:402:::!=:4:<:50:locked:not_ringed,ship:191:::!=:4:<:50:locked:not_ringed,ship:606:::!=:4:<:50:locked:not_ringed,ship:127:::!=:4:<:50:locked:not_ringed,ship:398:::!=:4:<:50:locked:not_ringed,ship:719:::!=:4:<:50:locked:not_ringed"
+  },
+  "passive_repair.enabled": true,
+  "passive_repair.repair_threshold": 2,
   "passive_repair.slots_to_reserve": 1,
   "quest.enabled": false,
   "quest.quests": [
     "Bd1",
     "Bd2",
     "Bd3",
-    "Bd4",
     "Bd5",
     "Bd6",
     "Bd7",
@@ -66,12 +75,19 @@
     "Bw2",
     "Bw3",
     "Bw4",
+    "Bm5",
+    "Bd4",
     "D2",
     "D3",
     "D4",
+    "D9",
+    "D11",
+    "D22",
     "E3",
     "E4"
   ],
   "scheduler.enabled": false,
-  "scheduler.rules": []
+  "scheduler.rules": [
+    "sorties_run:13:stop:combat:"
+  ]
 }

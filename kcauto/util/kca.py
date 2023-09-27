@@ -11,7 +11,7 @@ import config.config_core as cfg
 import ships.ships_core as shp
 import util.click_tracker as clt
 from constants import (
-    GAME_W, GAME_H, VISUAL_URL, API_URL, EXACT, DEFAULT, SLEEP_MODIFIER)
+    GAME_W, GAME_H, VISUAL_URL, API_URL, EXACT, DEFAULT, constants_timer)
 from kca_enums.interaction_modes import InteractionModeEnum
 from kca_enums.kcsapi_paths import KCSAPIEnum
 from util.exceptions import ChromeCrashException
@@ -508,10 +508,12 @@ class Kca(object):
                 the base sleep length. Defaults to None.
         """
         if base is None:
-            sleep(uniform(0.3, 0.7) + SLEEP_MODIFIER)
+            # sleep(uniform(0.3, 0.7) + SLEEP_MODIFIER)
+            sleep(uniform(0.3, 0.7) + constants_timer.SLEEP_MODIFIER())
         else:
             flex = base if flex is None else flex
-            sleep(uniform(base, base + flex) + SLEEP_MODIFIER)
+            # sleep(uniform(base, base + flex) + SLEEP_MODIFIER)
+            sleep(uniform(base, base + flex) + constants_timer.SLEEP_MODIFIER())
 
     def while_wrapper(
             self, conditional_func, internal_func=None, timeout=None,

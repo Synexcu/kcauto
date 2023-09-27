@@ -2,6 +2,7 @@
 
 - Added Randomized timings for Sleep Modifier & Loop Break constants through `kcauto\constants.py` file. GUI support soon.
 - Summer 2023 Event Support (Event configs from XVs32's kcauto. Small changes are made)
+- Added several private configs for farming and leveling (1-3, 7-4, 5-3 C, 7-1, etc.)
 
 #### v8.1.0
 

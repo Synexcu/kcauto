@@ -3,7 +3,7 @@ from pyvisauto import FindFailed
 from time import sleep
 
 import kcauto as _
-from constants import LOOP_BREAK_SECONDS
+from constants import constants_timer
 from util.exceptions import (
     ApiException, Catbomb201Exception, ChromeCrashException)
 from util.logger import Log
@@ -39,7 +39,7 @@ def kcauto_main():
                     _.kcauto.check_end_loop_at_port()
                     _.kcauto.print_stats()
                 _.kcauto.run_scheduler()
-                sleep(LOOP_BREAK_SECONDS)
+                sleep(constants_timer.LOOP_BREAK_SECONDS())
         except FindFailed:
             Log.log_error("FindFailed stacktrace:")
             print(traceback.format_exc())

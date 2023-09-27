@@ -1,5 +1,19 @@
-SLEEP_MODIFIER = 0
-LOOP_BREAK_SECONDS = 20
+import random
+
+class constants_timer():
+    @staticmethod
+    def SLEEP_MODIFIER():
+        # return random.choice([0,0,0,1,2,3,4,5]) #Modded_Default
+        return random.choice([0]) #Instant timer [0,1] (for maps with SELECT NODE TYPE, [0] ONLY is advised. Further sampling later)
+    
+    def LOOP_BREAK_SECONDS():
+        # return random.choice([10,11,12,13,14,15,16,17,18,19,20]) #Modded_Default
+        return random.choice([0,1]) #Instant timer
+
+# ABOVE THIS ARE ADDITIONAL
+
+# SLEEP_MODIFIER = 0 #SOURCE
+# LOOP_BREAK_SECONDS = 15 #SOURCE (15s advised)
 
 MIN_JST_OFFSET = -20
 MAX_JST_OFFSET = 20

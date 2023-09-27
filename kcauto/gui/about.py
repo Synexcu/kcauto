@@ -39,6 +39,23 @@ class About(LayoutBase):
                     text_color='blue',
                     enable_events=True
                 )],
+                [
+                    sg.Text(
+                        "modified by",
+                        font=cls.FONT_10,
+                        pad=(0, (30, 0))),
+                    sg.Text(
+                        "Synexcu",
+                        font=cls.FONT_10 + ('bold', ),
+                        pad=(0, (30, 0))),
+                ],
+                [sg.Text(
+                    "github",
+                    key='link_github1',
+                    font=cls.FONT_10 + ('bold', ),
+                    text_color='blue',
+                    enable_events=True
+                )],
             ],
             key='gui_tab_about',
             visible=False,
@@ -53,3 +70,5 @@ class About(LayoutBase):
             webbrowser.open('https://github.com/mrmin123/kcauto')
         if event == 'link_patreon':
             webbrowser.open('https://www.patreon.com/mrmin123')
+        if event == 'link_github1':
+            webbrowser.open('https://github.com/Synexcu/kcauto')
