@@ -1,3 +1,8 @@
+#VERY IMPORTANT! READ THIS!
+Just a heads up to everyone reading this repo. This repo is forked for my personal use of this app for educational purposes of vision-based automation as will be stated below. I take no responsibility if you are to use this for your own. **You have been warned**.
+I am modifying this program just for my hobby and to improve my python coding logic and improve my ability of reading other people's coding logic. Previous developer are attached in the about section of the app, alongside with their original repo GitHub link.
+
+
 # kcauto
 
 **kcauto** is a robust Kantai Collection automation tool. kcauto and it's predecessor [kancolle-auto](https://github.com/mrmin123/kancolle-auto) are proof-of-concepts in using vision-based automation to play Kantai Collection. They are exercises in automating large, convoluted, and complex game-playing logic. kcauto is written in Python 3.7.
