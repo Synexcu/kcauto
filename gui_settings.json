@@ -2,5 +2,5 @@
   "chrome_path": "",
   "python_command": "python",
   "track_clicks": false,
-  "debug_output": true
+  "debug_output": false
 }

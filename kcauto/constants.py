@@ -7,7 +7,7 @@ class constants_timer():
         return random.choice([0]) #Instant timer [0,1] (for maps with SELECT NODE TYPE, [0] ONLY is advised. Further sampling later)
     
     def LOOP_BREAK_SECONDS():
-        # return random.choice([10,11,12,13,14,15,16,17,18,19,20]) #Modded_Default
+        # return random.choice([10,11,12,13,14,15,16,17,18,19,20,21,22,23,25,180,180,180,240,270,300]) #Modded_Default
         return random.choice([0,1]) #Instant timer
 
 # ABOVE THIS ARE ADDITIONAL

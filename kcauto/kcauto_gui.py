@@ -13,6 +13,7 @@ from gui.layout_base import LayoutBase
 from gui.runtime_logger import RuntimeLogger
 from gui.settings import Settings
 from util.logger import Log
+from gui.intervals import Intervals
 
 
 def gui_main():
@@ -27,8 +28,9 @@ def gui_main():
             Config.get_layout(),
             RuntimeLogger.get_layout(),
             ClickPlotter.get_layout(),
+            Intervals.get_layout(),
             Settings.get_layout(),
-            About.get_layout(),
+            About.get_layout()
         ],
         ConfigControls.get_layout(),
         KcautoControls.get_layout(),

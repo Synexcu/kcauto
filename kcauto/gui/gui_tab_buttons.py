@@ -2,7 +2,7 @@ from gui.layout_base import LayoutBase
 
 
 class GuiTabButtonsLayout(LayoutBase):
-    GUI_TAB_LIST = ("config", "log", "click plot", "settings", "about")
+    GUI_TAB_LIST = ("config", "log", "click plot", "intervals", "settings", "about")
 
     @classmethod
     def get_layout(cls):

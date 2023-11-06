@@ -26,6 +26,12 @@ class LayoutBase(ABC):
         'pad': PAD_LABEL
     }
 
+    LABEL_INTERVALS = {
+        'font': FONT_10,
+        'justification': 'left',
+        # 'pad': ((135, 0), (0, 20))
+    }
+
     @classmethod
     def generate_tab_btn(
             cls, tab_group, label, key_suffix, font, idx,

@@ -8,10 +8,10 @@
     2
   ],
   "expedition.fleet_3": [
-    21
+    41
   ],
   "expedition.fleet_4": [
-    37
+    101
   ],
   "pvp.enabled": false,
   "pvp.fleet_preset": 3,
@@ -59,7 +59,7 @@
     "3": "morale:<:50,damage:==:4|class:2:<:2:!=:4:::unlocked:not_ringed",
     "6": "damage:==:4|ship:402:::!=:4:<:50:locked:not_ringed,ship:191:::!=:4:<:50:locked:not_ringed,ship:606:::!=:4:<:50:locked:not_ringed,ship:127:::!=:4:<:50:locked:not_ringed,ship:398:::!=:4:<:50:locked:not_ringed,ship:719:::!=:4:<:50:locked:not_ringed"
   },
-  "passive_repair.enabled": true,
+  "passive_repair.enabled": false,
   "passive_repair.repair_threshold": 2,
   "passive_repair.slots_to_reserve": 1,
   "quest.enabled": false,
