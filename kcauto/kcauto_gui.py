@@ -170,6 +170,7 @@ def update_gui(window, event, values):
     Config.update_gui(window, event, values)
     RuntimeLogger.update_gui(window, event, values)
     ClickPlotter.update_gui(window, event, values)
+    Intervals.update_gui(window, event, values)
     Settings.update_gui(window, event, values)
     About.update_gui(window, event, values)
     # for tkinter-level modifications

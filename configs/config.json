@@ -15,7 +15,7 @@
   ],
   "pvp.enabled": false,
   "pvp.fleet_preset": 3,
-  "combat.enabled": false,
+  "combat.enabled": true,
   "combat.sortie_map": "7-5",
   "combat.fleet_mode": "standard",
   "combat.fleet_presets": [],

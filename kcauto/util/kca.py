@@ -384,7 +384,7 @@ class Kca(object):
         r = self._get_region(region)
         return r.exists(self._create_asset_path(asset), similarity, cached)
 
-    def wait(self, region, asset, wait=30, similarity=DEFAULT):
+    def wait(self, region, asset, wait=10, similarity=DEFAULT):
         """Wrapper method for waiting for an asset to exist on-screen.
 
         Args:

@@ -1,3 +1,9 @@
+### v8.2.2
+
+- Added Interval feature.
+- Added `kcauto\constants.py` GUI support.
+- Fixed LBAS not working properly in some maps.
+
 ### v8.2.1
 
 - Added Randomized timings for Sleep Modifier & Loop Break constants through `kcauto\constants.py` file. GUI support soon.
