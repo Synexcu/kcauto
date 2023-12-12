@@ -2,3 +2,5 @@ So now that the Interval feature is complete, next would be..
 Adding support for 7-5 combat data I guess?
 
 More to come.
+
+I'm also thinking to add presets for Intervals too. Maybe later..
